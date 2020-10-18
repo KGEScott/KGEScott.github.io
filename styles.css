@@ -6,21 +6,28 @@ body{
 .assignment {
     display:flex;  
     padding:10px;
-    margin:20px;
+    margin:10px;
+    margin-bottom:30px;
     background: rgb(184, 184, 184);
+    border-radius:8px;
+    box-shadow: 5px 8px #575757;
 }
 
 .assignment img{
     width:200px;
     border: 4px solid rgb(65, 65, 65);
     margin-right:20px;
+    border-radius:8px;
 }
 
 h1{
-    color:rgb(5, 14, 143);
+    color:rgb(68, 0, 0);
 }
 
 a{
     text-decoration:none;
     color:maroon;
+}
+.assignment a:hover {
+    color:rgb(71, 71, 71);
 }
