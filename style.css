@@ -1,0 +1,380 @@
+/* Global styles */
+body {
+    font-family: 'American Typewriter', serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: rgb(82, 82, 82);
+    background-color: #333;
+    overflow-x: hidden;
+}
+
+a {
+    color: #490000;
+    text-decoration: none;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+
+a:hover {
+    text-decoration: underline;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+
+/* Header */
+header {
+    background-color: #490000;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    color: rgb(179, 179, 179);
+    border-bottom: 5px solid white;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+    position: relative;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, 
+    rgba(255, 255, 255, 0.1) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.1) 75%,
+    transparent 75%, transparent);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-image img {
+    width: 180px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 1rem;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header-text p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    color: rgb(255, 255, 255);
+}
+
+.header-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-text li {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.project {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 3rem;
+    box-shadow: 0 8px 16px rgba(80, 80, 80, 0.6);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(56, 56, 56);
+    border-radius: 15px;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(100, 100, 100, 0.9);
+}
+
+.project img {
+    width: 100%;
+    height: 75%;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+
+.project h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #797979;
+}
+
+.project a {
+    font-weight: bold;
+    color: rgb(172, 172, 172);
+    background-color: #490000;
+    padding: 0.7rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.project a:hover {
+    background-color: #333;
+    color: #8b8b8b;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal img {
+    display: block;
+    width: 100%;
+    max-width: 1700px;
+    max-height: 100%;
+    margin: 5% auto;
+    object-fit: contain;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1200px;
+}
+
+.modal-content:hover .modal-nav {
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-nav {
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.modal-nav:focus {
+    outline: none;
+}
+
+#prev-button {
+    left: -20px;
+}
+
+#next-button {
+    right: -20px;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #ddd;
+    padding: 1.2rem;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid white;
+    box-shadow: 0 -12px 24px rgba(0, 0, 0, 0.9);
+    position: relative;
+    background-image: linear-gradient(25deg, rgba(255, 255, 255, 0.1) 0%, 
+    rgba(255, 255, 255, 0.1) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.1) 75%,
+    transparent 75%, transparent);
+}
+
+footer p {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 767px) {
+    .header-image img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .header-text h1 {
+        font-size: 2.5rem;
+    }
+.header-text p {
+    font-size: 1.8rem;
+}
+
+.projects-container {
+    padding: 1rem;
+}
+
+.project {
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+.project h3 {
+    font-size: 1.6rem;
+}
+
+.project a {
+    padding: 0.5rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer li {
+    font-size: 0.9rem;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-image img {
+        width: 170px;
+        height: 230px;
+    }
+
+    .header-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .header-text p {
+        font-size: 2rem;
+    }
+    
+    footer p {
+        font-size: 1.1rem;
+    }
+
+    footer li {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .header-image img {
+        width: 180px;
+        height: 250px;
+    }
+
+    .header-text h1 {
+        font-size: 3rem;
+    }
+
+    .header-text p {
+        font-size: 2.2rem;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+
+    footer li {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (device-aspect-ratio: 25/9) {
+    .header-image img {
+        width: 120px;
+        height: 160px;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .header-text p {
+        font-size: 1.4rem;
+    }
+
+    .header-text li {
+        font-size: 1.1rem;
+    }
+
+    .projects-container {
+        padding: 1rem;
+    }
+
+    .project {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    .project h3 {
+        font-size: 1.4rem;
+    }
+
+    .project a {
+        padding: 0.5rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    footer li {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (device-aspect-ratio: 33/16) {
+    header {
+        width: 100vw;
+    }
+}
+
+
+
