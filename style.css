@@ -44,7 +44,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 100%;
+    width: 100%;
 }
 
 .header-image img {
@@ -85,8 +85,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center; /* Add this line */
     padding: 2rem;
-    max-width: 100%;
+    width: 100%;
 }
 
 .project {
@@ -208,24 +209,25 @@ header {
 
 /* Footer */
 footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Add this line */
     background-color: #222;
     color: #ddd;
     padding: 1.2rem;
     text-align: center;
     bottom: 0;
-    width: 100%; /* Set the width to 100% */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
+    width: 100%;
+    box-sizing: border-box;
     border-top: 5px solid white;
     box-shadow: 0 -12px 24px rgba(0, 0, 0, 0.9);
-    background-image: linear-gradient(25deg, rgba(255, 255, 255, 0.1) 0%, 
-    rgba(255, 255, 255, 0.1) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.1) 50%,
-    rgba(255, 255, 255, 0.1) 75%,
-    transparent 75%, transparent);
-    display: flex;
-    flex-wrap: wrap;
+    background-image: linear-gradient(25deg, rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.1) 25%,
+        transparent 25%, transparent 50%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.1) 75%,
+        transparent 75%, transparent);
 }
 
 footer p {
