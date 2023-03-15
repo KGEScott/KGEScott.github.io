@@ -4,11 +4,11 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f7f7f7;
+    background-color: #f9f9f9;
 }
 
 a {
-    color: #4CAF50;
+    color: #0077b6;
     text-decoration: none;
 }
 
@@ -18,10 +18,10 @@ a:hover {
 
 /* Header */
 header {
-    background-color: #4CAF50;
+    background-color: #0077b6;
     padding: 1.5rem;
     text-align: center;
-    color: white;
+    color: #f9f9f9;
 }
 
 header h1 {
@@ -44,7 +44,7 @@ header h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: #fff;
 }
 
 .project:hover {
@@ -67,7 +67,7 @@ header h1 {
 
 .project a {
     font-weight: bold;
-    color: #4CAF50;
+    color: #0077b6;
 }
 
 @media (max-width: 768px) {
@@ -84,8 +84,8 @@ header h1 {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #222;
+    color: #f9f9f9;
     padding: 2rem;
     text-align: center;
 }
@@ -100,7 +100,6 @@ footer p {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    color: #f7f7f7;
 }
 
 footer ul {
@@ -112,5 +111,4 @@ footer ul {
 footer li {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
-    color: #f7f7f7;
 }
