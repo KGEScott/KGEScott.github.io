@@ -379,5 +379,14 @@ footer li {
     }
 }
 
+@media (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer * {
+    width: 100%;
+  }
+}
 
 
