@@ -224,6 +224,8 @@ footer {
     rgba(255, 255, 255, 0.1) 50%,
     rgba(255, 255, 255, 0.1) 75%,
     transparent 75%, transparent);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer p {
