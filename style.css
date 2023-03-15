@@ -207,7 +207,6 @@ header {
 
 
 /* Footer */
-/* Footer */
 footer {
     background-color: #222;
     color: #ddd;
@@ -218,7 +217,6 @@ footer {
     box-sizing: border-box; /* Include padding and border in the width calculation */
     border-top: 5px solid white;
     box-shadow: 0 -12px 24px rgba(0, 0, 0, 0.9);
-    position: relative;
     background-image: linear-gradient(25deg, rgba(255, 255, 255, 0.1) 0%, 
     rgba(255, 255, 255, 0.1) 25%,
     transparent 25%,
