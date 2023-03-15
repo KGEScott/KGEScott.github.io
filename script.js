@@ -20,7 +20,7 @@ const projectsImages = [
     ],
     [
         "images/repository.png"
-    ]
+    ],
 ];
 
 function openModal(projectIndex, imageIndex) {
