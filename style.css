@@ -40,9 +40,9 @@ header {
 }
 
 .header-container {
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
     flex-wrap: wrap;
     max-width: 100%;
 }
@@ -224,8 +224,11 @@ footer {
     rgba(255, 255, 255, 0.1) 50%,
     rgba(255, 255, 255, 0.1) 75%,
     transparent 75%, transparent);
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 footer p {
