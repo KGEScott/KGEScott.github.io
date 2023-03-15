@@ -18,7 +18,9 @@ const projectsImages = [
         "images/delproduct.png",
         "images/updateproduct.png"
     ],
-    // Add more projects
+    [
+        "images/repository.png"
+    ]
 ];
 
 function openModal(projectIndex, imageIndex) {
