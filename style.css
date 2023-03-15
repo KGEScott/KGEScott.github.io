@@ -3,8 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f7f7f7;
+    color: #ddd;
+    background-color: #333;
 }
 
 a {
@@ -21,7 +21,7 @@ header {
     background-color: #800000;
     padding: 2rem;
     text-align: center;
-    color: #333;
+    color: #ddd;
 }
 
 .header-container {
@@ -46,7 +46,7 @@ header {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    color: #333;
+    color: #ddd;
 }
 
 .header-text ul {
@@ -75,7 +75,7 @@ header {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     text-align: center;
     transition: all 0.3s ease-in-out;
-    background-color: #f7f7f7;
+    background-color: #ddd;
     border-radius: 15px;
 }
 
@@ -127,8 +127,8 @@ header {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #f7f7f7;
+    background-color: #222;
+    color: #ddd;
     padding: 2rem;
     text-align: center;
     position: absolute;
@@ -150,4 +150,5 @@ footer ul {
 
 footer li {
     margin-bottom: 0.5rem;
-    font-size:
+    font-size: 1.1rem;
+}
