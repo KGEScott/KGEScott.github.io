@@ -8,7 +8,7 @@ body {
 }
 
 a {
-    color: #c00;
+    color: #800000;
     text-decoration: none;
 }
 
@@ -18,10 +18,10 @@ a:hover {
 
 /* Header */
 header {
-    background-color: #c00;
-    padding: 1.5rem;
+    background-color: #800000;
+    padding: 2rem;
     text-align: center;
-    color: white;
+    color: #333;
 }
 
 .header-container {
@@ -31,21 +31,22 @@ header {
 }
 
 .header-image img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 200px;
     border-radius: 50%;
     margin-right: 2rem;
 }
 
 .header-text h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0;
 }
 
 .header-text p {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 1.2rem;
+    color: #333;
 }
 
 .header-text ul {
@@ -71,33 +72,45 @@ header {
     width: 30%;
     margin: 1rem;
     padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     text-align: center;
     transition: all 0.3s ease-in-out;
-    background-color: gray;
+    background-color: #f7f7f7;
+    border-radius: 15px;
 }
 
 .project:hover {
     transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 .project img {
     width: 100%;
     height: auto;
     cursor: pointer;
+    border-radius: 15px;
 }
 
 .project h3 {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 1.8rem;
+    color: #800000;
 }
 
 .project a {
     font-weight: bold;
-    color: #c00;
+    color: #333;
+    background-color: #800000;
+    padding: 0.7rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.project a:hover {
+    background-color: #333;
+    color: #f7f7f7;
 }
 
 @media (max-width: 768px) {
@@ -114,17 +127,19 @@ header {
 
 /* Footer */
 footer {
-    background-color: #c00;
-    color: white;
+    background-color: #333;
+    color: #f7f7f7;
     padding: 2rem;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    color: #f7f7f7;
 }
 
 footer ul {
@@ -135,6 +150,4 @@ footer ul {
 
 footer li {
     margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-    color: #f7f7f7;
-}
+    font-size:
